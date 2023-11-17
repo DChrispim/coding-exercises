@@ -27,7 +27,7 @@ elif which_loop_use == "while":
         if i == floor_to_exclude:
             pass
         elif reverse_order:
-            print("Floor number: " + str(20 - i))
+            print("Floor number: " + str(n_floors - i))
         else:
             print("Floor number: " + str(i))
         i += 1
