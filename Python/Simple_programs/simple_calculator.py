@@ -8,7 +8,20 @@
 # Definição das funções
 
 def funcao_calculadora_simples(a, b, operacao):
+    """ 
+    Description: Função que calcula a operação (soma, subtração, multiplicação ou divisão) entre dois números
+    Input:
+        a: int
+        b: int
+        operacao: string (soma, subtração, multiplicação ou divisão)
+    Saida:
+        valor: number (int ou float dependendo da escolha de a e b)
+    """
+
+    # Valor inicial
     valor = 0
+
+    # Escolha das operações
     if operacao.lower() == "soma":
         valor = a + b
     elif operacao.lower() == "subtracao":
@@ -16,14 +29,15 @@ def funcao_calculadora_simples(a, b, operacao):
     elif operacao.lower() == "multiplicacao":
         valor = a * b
     elif operacao.lower() == "divisao":
-        if b == 0:
+        if b == 0:                              # Caso onde a divisão não é possivel
             print("Not possible.")
             return 0
         else:
             valor = a / b
+
     return valor
 
-# Teste de função
+# Código de teste
 if __name__ == "__main__":
     
     # Importa pacote de números randomicos
@@ -43,5 +57,5 @@ if __name__ == "__main__":
     zipped = zip(operacoes, valores_corretos)
 
     for operacao, valor_correto in zipped:
-        func_output = funcao_calculadora_simples(a, b, operacao)
-        print(f"funcao_calculadora_simples({a},{b},{operacao}) = {func_output}. (valor correto {valor_correto})")
+        func_output = funcao_calculadora_simples(a, b, operacao)                                                    # Calcula o valor usando a função definida
+        print(f"funcao_calculadora_simples({a},{b},{operacao}) = {func_output}. (valor correto {valor_correto})")   # Mensagem com o valor calculado e o valor esperado
