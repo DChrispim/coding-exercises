@@ -1,13 +1,13 @@
 """ 
     Title: Simple use of for and while loop
     Author: Breno D. Chrispim
-    Exercise: Print the floor number of an building. The owner of the building do not wish to include the floor 13. Additional option to reverse order.
+    Description: Print the floor number of an building. The owner of the building do not wish to include the floor 13. Additional option to reverse order.
 """
 # Definitions
 n_floors = 20            # Define the number of floors
 has_zero_floor = False   # Boolean indicating if the floor 0 is present
 floor_to_exclude = 13    # Floor to exclude
-reverse_order = False     # Boolean indicating to print in reverse order
+reverse_order = False    # Boolean indicating to print in reverse order
 which_loop_use = "while" # Boolean indicating which loop (while of for) to use
 
 if which_loop_use == "for":
