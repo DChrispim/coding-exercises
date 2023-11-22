@@ -178,7 +178,7 @@ def replace_element(database, product_old, product_new, quantity):
                 
     return database
 
-    # Function use
+
 if __name__ == "__main__":
     
     # Loop control variable
