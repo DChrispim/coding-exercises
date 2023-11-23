@@ -1,0 +1,52 @@
+<!-- 
+    Titulo: Idade em ano de eleição. Você precisa ir votar?
+    Autor: Breno D. Chrispim
+    Descrição: Código simples que utiliza quatro funções JavaScript com o objetivo de mostrar ao usuario a idade que ele tem nos anos de eleição e se ele 
+    precisa participar do processo eleitoral ou não. Isso se baseia na lei brasileiro onde pessoas com menos de 16 anos não podem votar, pessoas com idades 
+    entre 16 anos e 18 anos tem o voto facultativo, pessoas com idades entre 18 e 65 precisam participar e aqueles com idade superior a 65 podem participar 
+    ou não. Código sugerido como exercício do curso Padrão Web - HTML e CSS da pós-graduação Desenvolvimento Full Stack e Cloud Computing do Gran Faculdade.
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Você precisa ir votar?</title>
+    <script src="js/funcoes.js"></script>
+</head>
+<body>
+    <h2>Você precisa ir votar?</h2>
+    <p>Essa pagina calcula a sua idade nos anos de eleições do Brasil entre os anos 1989 e 2042.</p>
+    <form action="">
+        Ano de nascimento: <input type="number" id="ano"><br>
+        <label for="mes">Mês de nascimento:</label>
+        <select id="mes" name="mes">
+            <option value="1">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Março</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+        </select><br>
+        <input type="button" value="Quando eu vou poder votar?" onclick="tabelaAnoEleicoes(document.getElementById('ano').value, document.getElementById('mes').value)">
+        <input type="button" value="Limpar tabela" onclick="limparTabela()"><br>
+    </form>
+    <table id="tabelaEleicoes">
+        <thead>
+            <tr>
+                <th>Ano de Eleição</th>
+                <th>Idade nesse ano</th>
+                <th>Preciso participar?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tbody></tbody>
+        </tbody>
+    </table>
+</body>
+</html>
