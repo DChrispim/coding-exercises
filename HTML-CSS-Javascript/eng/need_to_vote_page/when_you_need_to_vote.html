@@ -1,0 +1,52 @@
+<!-- 
+    Title: Age at election year in Brazil. Do you need to vote?
+    Author: Breno D. Chrispim
+    Exercise: Simple HTML-Javascript code to compute the user age at the election year in Brazil and if he need to go vote or not. This condition is based on 
+    Brazilian law, if someone is 16 years or less old he can not vote, between 16 (includes) and 18 (excluded) he can choose to vote or not, anyone with ages 
+    between 18 (included) and 65 (excluded) the vote is mandatory, finally if the person is 65 (included) years or more he can choose to vote or not.
+    This code is an suggested exercise of the course Padrão Web - HTML e CSS from pos-graduation in Desenvolvimento Full Stack e Cloud Computing from Gran University.
+-->
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you need to vote?</title>
+    <script src="js/functions.js"></script>
+</head>
+<body>
+    <h2>Do you need to vote?</h2>
+    <p>This page uses JavaScript to compute if you need to participate in Brazil's election given your age between 1989 and 2042.</p>
+    <form action="">
+        Year of birth: <input type="number" id="year"><br>
+        <label for="month">Month of birth:</label>
+        <select id="month" name="month">
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select><br>
+        <input type="button" value="When I need to vote?" onclick="tableYearElection(document.getElementById('year').value, document.getElementById('month').value)">
+        <input type="button" value="Clean table" onclick="clearTable()"><br>
+    </form>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Year of election</th>
+                <th>Age on this year</th>
+                <th>Do I need to participate?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tbody></tbody>
+        </tbody>
+    </table>
+</body>
+</html>
