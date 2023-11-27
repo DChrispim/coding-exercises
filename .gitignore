@@ -1,4 +1,5 @@
-
+.gitignore
+.gitattributes
 draft.ipynb
 test.txt
 # Draft folder
