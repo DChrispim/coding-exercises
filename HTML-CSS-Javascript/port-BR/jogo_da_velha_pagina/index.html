@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da velha</title>
+    <script src="js/funcoes.js"></script>
+
+    <style> 
+        input {
+          width: 25%;
+          border: 3px solid #555;
+          padding-block: 0px;
+        }
+        table {
+        width: 30%;
+        border: 1px solid;
+        text-align: center;
+        }
+    </style>
+</head>
+<header>
+    <h1>Jogo da velha</h1>
+</header>
+<body onload="iniciar()">
+    <div id="board"></div>
+    <!-- <table><tr><td>
+        <input id='00' type='text' onblur="clearTextField('00')" onkeydown="marcar(event)" value=''></td><td>
+        <input id='01' type='text' onblur="clearTextField('01')" onkeydown="marcar(event)" value=''></td><td><input id='02' type='text' onblur="clearTextField('02')" onkeydown="marcar(event)" value=''></td></tr><tr><td><input id='10' type='text' onblur="clearTextField('10')" onkeydown="marcar(event)" value=''></td><td><input id='11' type='text' onblur="clearTextField('11')" onkeydown="marcar(event)" value=''></td><td><input id='12' type='text' onblur="clearTextField('12')" onkeydown="marcar(event)" value=''></td></tr><tr><td><input id='20' type='text' onblur="clearTextField('20')" onkeydown="marcar(event)" value=''></td><td><input id='21' type='text' onblur="clearTextField('21')" onkeydown="marcar(event)" value=''></td><td><input id='22' type='text' onblur="clearTextField('22')" onkeydown="marcar(event)" value=''></td></tr></table><br> -->
+
+    <div id="menuJogador">
+        <!-- <button onclick="jogar()" >Marcar</button><br> -->
+        <button onclick="iniciar()"> Reiniciar</button><br>
+        <div id="aviso"></div><br>
+        <div id="aviso2"></div>
+    </div>
+</body>
+</html>
