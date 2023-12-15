@@ -1,0 +1,86 @@
+body {
+    background-image: url("../img/Img2.png");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: 1280px;
+    background-position: center;
+}
+
+.content {
+    width: 1280px;
+    height: 1708px;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.flex-container > div {
+    margin: 10px;
+    padding: 20px;
+  }
+
+#github {
+    color: #E9BB73; 
+    font-size: 24px; 
+    font-family: Kadwa; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+
+#logo {
+    width: 188px;
+    height: 186px;
+}
+
+#textoHeader {
+    color: var(--Azul, #1B446D);
+    font-family: Kadwa;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.5px;
+    text-align: center;
+}
+
+a, nav {
+    text-decoration: none;
+    color: unset;
+}
+
+#textoNav {
+    display: flex;
+    gap: 33px;
+    margin: 10px;
+    padding: 20px;
+    justify-content: space-between;
+    color: var(--Amarelo, #E9BB73);
+    font-family: Kadwa;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.84px;
+}
+
+.flex-container-main-text {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.mainText {
+    width: 1064px;
+    height: 1052px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--Branco, #FFF);
+    padding: 20px;
+}
+
