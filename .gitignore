@@ -5,3 +5,4 @@ test.txt
 # Draft folder
 /Drafts
 /Drafts/**
+.vscode
