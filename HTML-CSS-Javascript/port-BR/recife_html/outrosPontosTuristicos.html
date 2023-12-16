@@ -1,58 +1,50 @@
 <!-- 
-    Titulo: Pagina simples - Outros pontos turísticos
+    Titulo: Pagina simples sobre pontos turísticos 
     Author: Breno D. Chrispim
     Turma: 11
-    Descrição: Página simples criada dentro do Desenvolvimento 4 (HTML/CSS) do curso Proz + AWS + Talento Cloud. O objetivo é:
-    Com a página sobre o Marco Zero feita, é necessário de uma outra página e de um link que leve até ela. Na nova página, fale sobre dois outros pontos turísticos do Recife Antigo e siga os pré-requisitos a seguir: 
-    1. crie um link que irá direcionar para essa nova página; 
-    2. adicione imagens sobre os lugares. 
+    Descrição: Página simples criada dentro do Desenvolvimento 3 (HTML/CSS) do curso Proz + AWS + Talento Cloud
  -->
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Outros pontos turístico</title>
-    </head>
-    <body>
-        <header>
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Conheça Recife!</title>
+ 
+     <link rel="stylesheet" href="./css/main.css">
+ </head>
+ <body class="content">
+     <header>
+         <nav class="flex-container">
+             <div><img id="logo" src="./img/Logo.svg" alt="Logo"></div>
+             <div id="github">
+                 <a href="https://github.com/DChrispim/coding-exercises" target="_blank">DChrispim/coding-exercises</a>
+             </div>
+         </nav>
+         <div id="textoHeader">Visite Pernambuco</div>
+     </header>
+     <main>
+        <nav id="textoNav">
+            <div><a href="./index.html">História</a></div>
+            <div><a href="./outrosPontosTuristicos.html">Marco Zero</a></div>
+            <div><a href="./parqueEsculturas.html">Parque das Esculturas</a></div>
+            <div><a href="./convento.html">Convento de Nossa Senhora do Carmo</a></div>
+        </nav>
+        <div class="flex-container-main-text ">
+            <div class="mainText">
+                <h1>Marco Zero</h1>
+                <h2>Praça Rio Branco (Recife)</h2>
+                <p>A Praça Rio Branco, também conhecida como Marco Zero, é um espaço público localizado no bairro do Recife da cidade homônima, capital de Pernambuco.<sup><em><a class="link" href="https://pt.wikipedia.org/wiki/Pra%C3%A7a_Rio_Branco_(Recife)" target="_blank">wikipedia</a></em></sup></p>
+                <p>O local fica próximo ao Porto do Recife e abriga o Marco Zero da cidade do Recife (instalado em 31 de janeiro de 1938, pelo Automóvel Clube de Pernambuco). É deste marco que são feitas todas as medidas oficiais de distâncias rodoviárias locais. Oficialmente denominada de Praça Barão do Rio Branco, fica localizada na Av. Alfredo Lisboa conectada às ruas Marquês de Olinda, Rio Branco e Barbosa Lima.<sup><em><a class="link" href="https://pt.wikipedia.org/wiki/Pra%C3%A7a_Rio_Branco_(Recife)" target="_blank">wikipedia</a></em></sup></p>
+            </div>
             <figure>
-                <a href="./index.html"><img src="./img/img1.jpg" alt="Panorama urbano de Recife com destaque para a Ilha de Antônio Vaz e as pontes do Centro Histórico" width="500"></a>
-                <figcaption>Panorama urbano de Recife com destaque para a Ilha de Antônio Vaz e as pontes do Centro Histórico. <sup>Fonte: <em><a href="https://pt.wikipedia.org/wiki/Recife#" target="_blank">wikipedia</a></em></sup</figcaption>
+                <img tag="img-ponto-zero" src="./img/marcoZero.jpg" alt="Marco Zero do Recife" height="500px">
               </figure>
-            <h1>Você conhece Recife?</h1>
-            <h4>Não conhece? Veja mais aqui mesmo!</h4>
-        </header>
-
-        <h2>Parque das Esculturas Francisco Brennand</h2>
-        <p>O Parque das Esculturas Francisco Brennand é um museu de arte a céu aberto localizado na cidade do Recife, capital do estado brasileiro de Pernambuco. Constitui um dos principais feitos do artista plástico pernambucano Francisco Brennand.<sup>Fonte: <em><a href="https://pt.wikipedia.org/wiki/Parque_das_Esculturas_Francisco_Brennand" target="_blank">wikipedia</a></em></sup></p></p>
-        
-        <p>Idealizado na década de 1990 como parte do projeto “Eu vi o mundo… Ele Começava no Recife” para comemoração dos 500 anos do descobrimento do Brasil, o parque foi inaugurado em 29 de dezembro 2000.<sup>Fonte: <em><a href="https://pt.wikipedia.org/wiki/Parque_das_Esculturas_Francisco_Brennand" target="_blank">wikipedia</a></em></sup></p></p>
-        
-        <p>Ao total, existem 90 esculturas criadas por Francisco Brennand, sendo a principal obra no complexo a Torre de Cristal, com 32 metros de altura e confeccionada em argila e bronze.<sup>Fonte: <em><a href="https://pt.wikipedia.org/wiki/Parque_das_Esculturas_Francisco_Brennand" target="_blank">wikipedia</a></em></sup></p></p>
-        
-        <p>Apesar de ser um dos principais pontos turísticos de Recife, em pesquisa ao Jornal do Comércio feito em 2018, compreendeu que mais da metade da população não conhece o parque.<sup>Fonte: <em><a href="https://pt.wikipedia.org/wiki/Parque_das_Esculturas_Francisco_Brennand" target="_blank">wikipedia</a></em></sup></p>
-        
-        <figure>
-        <img tag="img-ponto-zero" src="./img/img3.jpg" alt="Parque das Esculturas Francisco Brennand" width="400">
-        <figcaption>O Parque das Esculturas Francisco Brennand, situado no molhe do bairro do Recife, de frente à <strong>Praça do Marco Zero</strong>, foi inaugurado em dezembro de 2000. <sup>Fonte: <em><a href="https://pt.wikipedia.org/wiki/Parque_das_Esculturas_Francisco_Brennand" target="_blank">wikipedia</a></em></sup></figcaption>
-      </figure>
-
-      <p>Para chegar até o parque, o visitante deve entrar numa embarcação, que sai de um pequeno píer no <a href="./index.html">Marco Zero</a>, e cruzar o Estuário do Porto do Recife indo até a entrada do parque ou ir de carro pela Avenida Brasília Teimosa.<sup>Fonte: <em><a href="https://pt.wikipedia.org/wiki/Parque_das_Esculturas_Francisco_Brennand" target="_blank">wikipedia</a></em></sup></p>
-
-    <h2>Basílica e Convento de Nossa Senhora do Carmo</h2>
-    <p>A Basílica e Convento de Nossa Senhora do Carmo é um conjunto arquitetônico católico pertencente à Ordem Carmelita, localizado na cidade do Recife, em Pernambuco, Brasil.<sup>Fonte: <em><a href="https://pt.wikipedia.org/wiki/Parque_das_Esculturas_Francisco_Brennand" target="_blank">wikipedia</a></em></sup></p></p>
-    
-    <p>O imponente frontispício da Basílica do Carmo possui muitas volutas esculpidas em pedra, e a torre, de 50 metros de altura — a mais alta torre barroca do Brasil —, é encimada por um dos mais elaborados bulbos do estilo no país. No interior, a decoração em talha dourada e a estatuária são de valor inestimável, destacando-se a capela-mor e seu fabuloso retábulo com imagens de Nossa Senhora do Carmo e dos profetas Elias e Eliseu.<sup>Fonte: <em><a href="https://pt.wikipedia.org/wiki/Parque_das_Esculturas_Francisco_Brennand" target="_blank">wikipedia</a></em></sup></p></p>
-    
-    <p>No seu pátio, a cabeça do líder quilombola Zumbi dos Palmares ficou exposta até completa decomposição. No convento, encontram-se enterrados os restos mortais de Frei Caneca.<sup>Fonte: <em><a href="https://pt.wikipedia.org/wiki/Parque_das_Esculturas_Francisco_Brennand" target="_blank">wikipedia</a></em></sup></p></p>
-    <figure>
-        <img tag="img-ponto-zero" src="./img/img4.jpg" alt="Basílica e Convento de Nossa Senhora do Carmo" width="400">
-        <figcaption>O Parque das Esculturas Francisco Brennand, situado no molhe do bairro do Recife, de frente à <strong>Praça do Marco Zero</strong>, foi inaugurado em dezembro de 2000. <sup>Fonte: <em><a href="https://pt.wikipedia.org/wiki/Bas%C3%ADlica_e_Convento_de_Nossa_Senhora_do_Carmo" target="_blank">wikipedia</a></em></sup></figcaption>
-      </figure>
+        </div>
+    </main>
+    <footer>
+    </footer>
 </body>
-
 <footer>
-    <p>Página simples criada dentro do Desenvolvimento 3 (HTML/CSS) do curso  <a href="https://talentocloud.joyclass.com/" target="_blank">Proz + AWS + Talento Cloud</a>. Veja como ela foi feita, assim como outros projetos em <a href="https://github.com/DChrispim/coding-exercises" target="_blank">DChrispim/coding-exercises</a>.</p>
 </footer>
 </html>
