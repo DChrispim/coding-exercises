@@ -6,6 +6,13 @@ body {
     background-position: center;
 }
 
+@media (max-width: 1200px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .content {
     width: 1280px;
     max-height: 1708px;
@@ -14,8 +21,16 @@ body {
     padding-bottom: 2%;
 }
 
+@media (max-width: 1200px) {
+    .content {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .flex-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
@@ -26,7 +41,15 @@ body {
     padding: 20px;
   }
 
-#github {
+@media (max-width: 800px) {
+    .flex-container {
+        justify-content: space-between;
+        margin: 5px;
+        padding: 10px;
+    }
+}
+
+.topMenu {
     color: #E9BB73; 
     font-size: 24px; 
     font-family: Kadwa; 
@@ -34,9 +57,33 @@ body {
     word-wrap: break-word
 }
 
+@media (max-width: 800px) {
+    #github {
+        font-size: 20px;
+    }
+}
+
+.menuMobile {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .menuMobile {
+        display: flex;
+    }
+}
+
 #logo {
     width: 188px;
     height: 186px;
+}
+
+@media (max-width: 800px) {
+    #logo {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
 }
 
 #textoHeader {
@@ -68,6 +115,13 @@ a, nav {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.84px;
+}
+
+
+@media (max-width: 800px) {
+    #textoNav {
+        display: none;
+    }
 }
 
 .flex-container-main-text {
@@ -102,6 +156,12 @@ h1 {
     letter-spacing: 3.2px;
 }
 
+@media (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+    } 
+}
+
 h2 {
     color: var(--Preto, #000);
 
@@ -114,6 +174,12 @@ h2 {
     letter-spacing: 1.2px;
 }
 
+@media (max-width: 800px) {
+    h2 {
+        font-size: 18px;
+    } 
+}
+
 p {
     color: var(--Preto, #000);
 
@@ -123,6 +189,12 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+@media (max-width: 800px) {
+    p {
+        font-size: 14px;
+    } 
 }
 
 .link {
@@ -144,3 +216,11 @@ img {
     /* padding: 20px; */
     object-fit:inherit;
   }
+
+@media (max-width: 1200px) {
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px;
+    }
+}
