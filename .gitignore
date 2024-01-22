@@ -1,8 +1,0 @@
-.gitignore
-.gitattributes
-draft.ipynb
-test.txt
-# Draft folder
-/Drafts
-/Drafts/**
-.vscode
