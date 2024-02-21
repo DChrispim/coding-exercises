@@ -14,6 +14,7 @@ hello_message = """
 
 # Definição das funções
 
+
 def age_2022(year_birth):
     """ 
     Description: Calcula a idade do usuario no ano de 2022
@@ -30,6 +31,8 @@ def age_2022(year_birth):
     return age
 
 # Função que pergunta nome
+
+
 def ask_name():
     """ 
     Description: Função que pergunta ao usuario o seu nome (string)
@@ -44,22 +47,26 @@ def ask_name():
     return name
 
 # Função que pergunta ano de nascimento
+
+
 def ask_date_birth():
     """ 
     Description: Função que pergunta ao usuario o seu ano de nascimento (int)
     Saida:
         date_birth: int
     """
-    date_birth = input("Qual o seu ano de nascimento? (Valor entre 1922 (incluso) e 2021 (incluso))")
+    date_birth = input(
+        "Qual o seu ano de nascimento? (Valor entre 1922 (incluso) e 2021 (incluso))")
 
     if any(char.isalpha() for char in date_birth) or (int(date_birth) < 1922) or (int(date_birth) > 2022):
         raise Exception("Isso não é um ano válido.")
 
     return int(date_birth)
 
+
 # Função principal
 if __name__ == "__main__":
-    
+
     # Variavel de controle de loop
     on = True
 
@@ -76,7 +83,7 @@ if __name__ == "__main__":
             year_birth = ask_date_birth()
             age = age_2022(year_birth)
             print(f"Nome: {nome}, idade em 2022: {age} anos")
-        
+
             # Terminar execusão
             on = False
         except Exception as err:

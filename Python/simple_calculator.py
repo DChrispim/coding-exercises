@@ -7,6 +7,7 @@
 
 # Definição das funções
 
+
 def funcao_calculadora_simples(a, b, operacao):
     """ 
     Description: Função que calcula a operação (soma, subtração, multiplicação ou divisão) entre dois números
@@ -37,9 +38,10 @@ def funcao_calculadora_simples(a, b, operacao):
 
     return valor
 
+
 # Código de teste
 if __name__ == "__main__":
-    
+
     # Importa pacote de números randomicos
     import random
 
@@ -51,11 +53,14 @@ if __name__ == "__main__":
     valores_corretos = [a + b, a - b, a * b, a / b, 0]
 
     # Define as operações que vão ser testadas
-    operacoes = ["soma", "subtracao", "multiplicacao", "divisao", "operacao_invalida"]
+    operacoes = ["soma", "subtracao", "multiplicacao",
+                 "divisao", "operacao_invalida"]
 
-    # Cria um objeto iteravel 
+    # Cria um objeto iteravel
     zipped = zip(operacoes, valores_corretos)
 
     for operacao, valor_correto in zipped:
-        func_output = funcao_calculadora_simples(a, b, operacao)                                                    # Calcula o valor usando a função definida
-        print(f"funcao_calculadora_simples({a},{b},{operacao}) = {func_output}. (valor correto {valor_correto})")   # Mensagem com o valor calculado e o valor esperado
+        # Calcula o valor usando a função definida
+        func_output = funcao_calculadora_simples(a, b, operacao)
+        print(f"funcao_calculadora_simples({a},{b},{operacao}) = {func_output}. (valor correto {
+              valor_correto})")   # Mensagem com o valor calculado e o valor esperado

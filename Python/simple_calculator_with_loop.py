@@ -23,6 +23,7 @@ ask_what_to_do = """
 
 # Definição das funções
 
+
 def funcao_calculadora_simples(a, b, operacao):
     """ 
     Description: Função que calcula a operação (soma, subtração, multiplicação ou divisão) entre dois números
@@ -51,13 +52,15 @@ def funcao_calculadora_simples(a, b, operacao):
         if b == 0:                              # Caso onde a divisão não é possivel
             print("Not possible.")
             return 0
-        
+
         else:
             valor = a / b
 
     return valor
 
 # Função que pergunta os números ao usuario
+
+
 def aks_values():
     """ 
     Description: Função que pergunta ao usuario dois valores numericos. Verifica se eles são inteiros
@@ -77,9 +80,10 @@ def aks_values():
 
     return a, b
 
+
 # Função principal
 if __name__ == "__main__":
-    
+
     # Variavel de controle de loop
     on = True
 
@@ -94,25 +98,25 @@ if __name__ == "__main__":
 
         except ValueError:
             print("Essa opção não existe")
-        
+
         # Opções de operações
-        if number == 1: # Soma
+        if number == 1:  # Soma
             a, b = aks_values()
             resultado = funcao_calculadora_simples(a, b, "soma")
             print(f"{a} + {b} = {resultado}")
-        elif number == 2: # Subtração
+        elif number == 2:  # Subtração
             a, b = aks_values()
             resultado = funcao_calculadora_simples(a, b, "subtracao")
             print(f"{a} - {b} = {resultado}")
-        elif number == 3: # Multiplicação
+        elif number == 3:  # Multiplicação
             a, b = aks_values()
             resultado = funcao_calculadora_simples(a, b, "multiplicacao")
             print(f"{a} x {b} = {resultado}")
-        elif number == 4: # Divisão
+        elif number == 4:  # Divisão
             a, b = aks_values()
             resultado = funcao_calculadora_simples(a, b, "divisao")
             print(f"{a} x {b} = {resultado}")
-        elif number == 0: # Sair
+        elif number == 0:  # Sair
             print("Adeus!")
             on = False
         else:
