@@ -4,6 +4,13 @@ Welcome to my coding exercise repository! The code here aims to be simple and se
 
 By [Breno D. Chrispim](https://github.com/DChrispim)
 
+## Contacte me on
+<div>
+<a href = "mailto:brenoadsdc@gmail.com"><img loading="lazy" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/brenochrispim/" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<a href="https://dchrispim.github.io/my-page/" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+</div>
+
 # Description of files/projects
 
 ## ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
